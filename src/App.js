@@ -5,6 +5,7 @@ import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import FriendDetail from './components/FriendDetail/FriendDetail';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/friends">
             <Friends></Friends>
+          </Route>
+          <Route path="/friend/:friendId">
+            <FriendDetail></FriendDetail>
           </Route>
           <Route exact path="/">
             <Home></Home>

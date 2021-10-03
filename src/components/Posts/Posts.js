@@ -12,6 +12,7 @@ const Posts = () => {
         <div>
             {
                 posts.map(post => <Post
+                    key={post.id}
                     post={post}
                 ></Post>)
             }
